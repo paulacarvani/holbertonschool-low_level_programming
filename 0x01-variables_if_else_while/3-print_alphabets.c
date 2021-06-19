@@ -9,6 +9,7 @@
 int main(void)
 {
 int alphabet = 97;
+int Upper = 65;
 
 while (alphabet <= 122)
 
@@ -16,12 +17,11 @@ while (alphabet <= 122)
 putchar (alphabet);
 alphabet++;
 }
-int alphabets = 65;
 
-while (alphabets <= 90)
+while (Upper <= 90)
 {
-putchar (alphabets);
-alphabet++;
+putchar (Upper);
+Upper++;
 }
 {
 putchar('\n');
