@@ -15,13 +15,12 @@ int alphabt = 97;
  */
 while (alphabt <= 122)
 {
-if (alphabt != 101 || alphabt != 113)
-{
+if (alphabt != 101 && alphabt != 113)
 putchar (alphabt);
 alphabt++;
 }
-}
-{putchar ('\n');
+{
+putchar ('\n');
 }
 return (0);
 }
