@@ -17,7 +17,7 @@ while (numbers <= 57)
 {
 putchar(numbers);
 
-if (numbers != 9)
+if (numbers != 57)
 {
 putchar(coma);
 putchar(espacio);
