@@ -33,9 +33,6 @@ putchar(numbers);
 putchar(coma);
 putchar(espacio);
 }
-else if (numbers == 9)
-{
-}
 {
 putchar ('\n');
 }
