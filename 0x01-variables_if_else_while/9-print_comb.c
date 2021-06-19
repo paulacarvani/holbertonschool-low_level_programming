@@ -16,16 +16,15 @@ int espacio = 32;
 while (numbers <= 57)
 {
 putchar(numbers);
-numbers++;
 
-if (numbers < 9)
+if (numbers != 9)
+{
 putchar(coma);
-
-else if (numbers < 9)
 putchar(espacio);
 }
-{
-putchar ('\n');
+numbers++;
 }
+putchar ('\n');
+
 return (0);
 }
