@@ -14,25 +14,13 @@ int coma = 44;
 int espacio = 32;
 
 while (numbers <= 57)
-  /**
-   *{
-   *putchar (numbers);
-   *numbers++;
-   *}
-   *if (numbers <= 9)
-   *{
-   *putchar (coma);
-   *}
-   *{
-   *putchar (espacio);
-   *{
-   */
-if (numbers < 9)
 {
 putchar(numbers);
+numbers++;
+
+if (numbers < 9)
 putchar(coma);
 putchar(espacio);
-numbers++;
 }
 {
 putchar ('\n');
