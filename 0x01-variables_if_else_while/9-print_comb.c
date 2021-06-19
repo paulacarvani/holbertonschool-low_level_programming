@@ -19,10 +19,10 @@ putchar(numbers);
 numbers++;
 
 if (numbers < 9)
-{
 putchar(coma);
+
+else if (numbers < 9)
 putchar(espacio);
-}
 }
 {
 putchar ('\n');
