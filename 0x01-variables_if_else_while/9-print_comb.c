@@ -27,14 +27,12 @@ while (numbers <= 57)
    *putchar (espacio);
    *{
    */
-{
-putchar(numbers);
-numbers++;
 if (numbers < 9)
 {
+putchar(numbers);
 putchar(coma);
 putchar(espacio);
-}
+numbers++;
 }
 {
 putchar ('\n');
