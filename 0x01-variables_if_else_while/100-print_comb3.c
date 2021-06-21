@@ -8,24 +8,22 @@
  */
 int main(void)
 {
-int a = 48;
-while (a < 57)
+int a = '0';
+while (a < '9')
 {
-int c = 0;
-while (0 <= 1)
+int b = a + 1;
+while (b <= '9')
 {
-int b = 48;
-if (a != b)
-while (b <= 57)
-{
-putchar (b);
-b++;
-}
-c++;
-}
 putchar (a);
+putchar (b);	   
+
+if (a < '9' && b <= '9')
+{
 putchar (',');
 putchar (' ');
+}
+b++;
+}
 a++;
 }
 return (0);
