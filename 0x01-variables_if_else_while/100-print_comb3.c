@@ -17,7 +17,7 @@ while (b <= '9')
 putchar (a);
 putchar (b);	   
 
-if (a < '9' && b <= '9')
+if (a <= '7' && b <= '9')
 {
 putchar (',');
 putchar (' ');
