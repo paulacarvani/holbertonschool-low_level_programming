@@ -15,8 +15,7 @@ int b = a + 1;
 while (b <= '9')
 {
 putchar (a);
-putchar (b);	   
-
+putchar (b);
 if (a <= '7' && b <= '9')
 {
 putchar (',');
