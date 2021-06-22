@@ -1,13 +1,19 @@
 /**
- * main - check the code for Holberton School students.
+ * _abs - check the code for Holberton School students.
+ *
+ *@n : Variable declarada
  *
  * Return: Always 0.
  */
 
-int _abs(int)
+int _abs(int n)
 {
-  if (int >= '0')
-    int * '1';
-  else
-    int * '-1';
+if (n < 0)
+{
+return (n * -1);
+}
+else
+{
+return (n);
+}
 }
