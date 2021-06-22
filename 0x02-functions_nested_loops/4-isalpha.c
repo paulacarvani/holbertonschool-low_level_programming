@@ -2,6 +2,8 @@
 /**
  * _isalpha - check the code for Holberton School students.
  *
+ * @c : variable declarada
+ *
  * Return: Always 0.
  */
 

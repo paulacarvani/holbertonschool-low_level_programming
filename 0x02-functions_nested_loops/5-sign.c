@@ -3,6 +3,8 @@
 /**
  * print_sign - check the code for Holberton School students.
  *
+ * @n : variable declarada
+ *
  * Return: Always 0.
  */
 

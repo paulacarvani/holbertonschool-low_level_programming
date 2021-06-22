@@ -2,8 +2,7 @@
 
 /**
  * _islower - check the code for Holberton School students.
- *
- * int - variable
+ * @c : Variable declarada
  *
  * Return: Always 0.
  */
