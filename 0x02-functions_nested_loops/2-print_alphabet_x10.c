@@ -1,12 +1,10 @@
-#include <stdlib.h>
-#include <time.h>
-#include<stdio.h>
+#include "holberton.h"
 /**
- * main - Entry point
+ * print_alphabet_x10 - Entry point
  *
  * Return: Always 0
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 int contador = 0;
 while (contador < 10)
@@ -14,11 +12,10 @@ while (contador < 10)
 int letters = 97;
 while (letters <= 122)
 {
-putchar (letters);
+_putchar (letters);
 letters++;
 }
-putchar ('\n');
+_putchar ('\n');
 contador++;
 }
-return (0);
 }
