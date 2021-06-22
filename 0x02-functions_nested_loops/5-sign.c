@@ -1,28 +1,25 @@
- #include "holberton.h"
-
+#include "holberton.h"
 /**
- * print_sign - check the code for Holberton School students.
+ * print_sign - nombre del prototipo
+ * @n: Variable declarada
  *
- * @n : variable declarada
- *
- * Return: Always 0.
+ * Return: depende del numero
  */
-
 int print_sign(int n)
 {
-if (n > '0')
-{
-_putchar ('+');
-return (1);
-}
-else if (n < '1' && n >= '0')
-{
-_putchar ('0');
-return (0);
-}
-else
-{
-_putchar ('-');
-return (-1);
-}
+  if (n < 0)
+    {
+      _putchar('-');
+      return (-1);
+    }
+  else if (n == 0)
+    {
+      _putchar('0');
+      return (0);
+    }
+  else
+    {
+      _putchar ('+');
+      return (1);
+    }
 }
