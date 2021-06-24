@@ -1,0 +1,21 @@
+#include "holberton.h"
+/**
+ * more_numbers - Entry point
+ *
+ * Return: Always 0
+ */
+void more_numbers(void)
+{
+int contador = 0;
+while (contador < 10)
+{
+int numbers = 48;
+while (numbers <= 57)
+{
+_putchar (numbers);
+numbers++;
+}
+_putchar ('\n');
+contador++;
+}
+}
