@@ -7,7 +7,7 @@
 void print_most_numbers(void)
 {
 int numbers = 48;
-while (numbers <=57)
+while (numbers <= 57)
 {
 if (numbers != 50 && numbers != 52)
 putchar (numbers);
