@@ -12,7 +12,5 @@ while (numbers <= 57)
 _putchar (numbers);
 numbers++;
 }
-{
 _putchar ('\n');
-}
 }
