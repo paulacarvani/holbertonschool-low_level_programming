@@ -16,6 +16,6 @@ _putchar(str[j]);
 }
 else
 for (j = ( i + 1) / 2; j < i; j++)
-_putchar(str[j];
+_putchar(str[j]);
 _putchar('\n');
 }
