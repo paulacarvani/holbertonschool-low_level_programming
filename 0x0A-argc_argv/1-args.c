@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- *main - Entry point
+ *main - entry point
  *@argc: argc
  *@argv: argv
+ *Return: Always 0
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
