@@ -15,7 +15,7 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-strlen1 = (unsigned int)strlen(s1);
+strlen1 = (unsigned int)_strlen(s1);
 p = malloc((strlen1 + n + 1) * sizeof(char));
 if (p == NULL)
 return (NULL);
@@ -28,4 +28,19 @@ p[i] = s2[c++];
 }
 p[i] = '\0';
 return (p);
+}
+
+
+/**
+ * _strlen - find length of string
+ * @s: string
+ * Return: length of string
+ */
+
+int _strlen(char *s)
+{
+int i;
+for (i = 0; s[i] != '\0'; i++)
+;
+return (i);
 }
