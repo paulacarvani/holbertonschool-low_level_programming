@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * _calloc - allocates memory for an array, using malloc
- *@nmeb: unsigned int
+ *@nmemb: unsigned int
  *@size: unsigned int
  *Return: a pointer
  */
