@@ -7,11 +7,15 @@
  */
 size_t print_list(const list_t *h)
 {
-if (h == NULL)
+size_t nodes = 0;
+while (h != NULL)
 {
-return (0);
+if (h->str == NULL)
+printf("[0] (nil)\n");
+else
+printf("[%d] %s\n", h->len, h->str);
+h = h->next;
+nodes++;
 }
-printf("[%u] %s\n", h->str ? h->len : 0,
-h->str ? h->str : "(nil)");
-return (1 + print_list(h->next));
+return (nodes);
 }
