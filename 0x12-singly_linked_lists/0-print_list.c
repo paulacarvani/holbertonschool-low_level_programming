@@ -7,19 +7,15 @@
  */
 size_t print_list(const list_t *h)
 {
-int i = 0;
-while (h != NULL)
+const list_t *current;
+size_t c;
+c = 0;
+current = h;
+while (current != NULL)
 {
-if (h->str == NULL)
-{
-printf("[0] (nil)\n");
+printf("[%d] %s\n", current->len, current->str);
+current = current->next;
+c++;
 }
-else
-{
-printf("[%d] %s\n", h->len, h->str);
-}
-h = h->next;
-i++;
-}
-return (i);
+return (c);
 }
