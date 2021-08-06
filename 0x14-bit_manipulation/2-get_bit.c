@@ -13,6 +13,10 @@ if ((bit == 1) || (bit == 0))
 {
 return (bit);
 }
+else if (index > 64)
+{
+return (-1);
+}
 else
 {
 return (-1);
