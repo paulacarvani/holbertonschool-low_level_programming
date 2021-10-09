@@ -25,7 +25,7 @@ free(nht);
 return (NULL);
 }
 nht->size = size;
-for (i = 0; i< size; i++)
+for (i = 0; i < size; i++)
 nht->array[i] = NULL;
 
 return (nht);
