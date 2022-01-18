@@ -1,62 +1,64 @@
 #include "search_algos.h"
 
 /**
- * binary_search - Search for a value within an array.
- * @array: The array to be searched.
- * @size: The size of the array.
- * @value: The value to be searched.
+ * print_iterations - function that print values
+ * @array: the array of integers
+ * @start: start idx
+ * @end: final idx
  *
- * Return: The index of the value searched if found. Return -1 otherwise.
+ * Return: Always 0.
  */
+
+int print_iterations(int *array, int start, int end)
+{
+	int i;
+
+	for (i = start; i < end; i++)
+	{
+		printf("%d, ", array[i]);
+	}
+	printf("%d\n", array[end]);
+
+	return (0);
+}
+
+/**
+ * binary_search - function that search index
+ * value in an array of integers using the Linear search algorithm
+ * @array: the array of integers
+ * @size: the size of the array
+ * @value: the value to search
+ *
+ * Return: Always 0.
+ */
+
 int binary_search(int *array, size_t size, int value)
 {
-	if (!array)
-		return (-1);
-	return (binary_search_helper(array, value, 0, size - 1));
-}
 
-/**
- * binary_search_helper - The actual recursive binary search algorithm.
- * @array: The array to be searched.
- * @value: The value to be searched.
- * @left_idx: The leftmost index of the subarray.
- * @right_idx: The rightmost index of the subarray.
- *
- * Return: The index of the value searched if found. Return -1 otherwise.
- */
-int binary_search_helper(int *array, int value,
-			 size_t left_idx, size_t right_idx)
-{
 	size_t middle;
+	size_t start = 0;
+	size_t end = size - 1;
 
-	if (left_idx > right_idx)
+	if (array == NULL || size == 0)
 		return (-1);
 
-	print_subarray(array, left_idx, right_idx);
-
-	middle = (right_idx + left_idx) / 2;
-	if (array[middle] < value)
-		return (binary_search_helper(array, value, middle + 1, right_idx));
-	else if (array[middle] > value)
-		return (binary_search_helper(array, value, left_idx, middle - 1));
-	else
-		return (middle);
-}
-
-/**
- * print_subarray - Prints the elements of a given subarray
- * @array: The array to be printed.
- * @left_idx: The left index of the subarray.
- * @right_idx: The right index of the subarray.
- */
-void print_subarray(int *array, size_t left_idx, size_t right_idx)
-{
-	printf("Searching in array: ");
-	for (; left_idx <= right_idx; left_idx++)
+	while (start <= end)
 	{
-		printf("%d", array[left_idx]);
-		if (left_idx != right_idx)
-			printf(", ");
+		printf("Searching in array: ");
+		print_iterations(array, start, end);
+		middle = (start + end) / 2;
+
+		if (array[middle] < value)
+		{
+			start = middle + 1;
+		}
+		else if (array[middle] > value)
+		{
+			end = middle - 1;
+		}
+		else
+			return (middle);
 	}
-	printf("\n");
+
+	return (-1);
 }
